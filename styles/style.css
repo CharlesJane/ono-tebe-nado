@@ -1,1 +1,70 @@
-/* место для вашего кода */
+body {
+    font-size: 20px;
+}
+
+a { 
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.active {
+    border: none;
+}
+
+.logo {
+    width: 148px; 
+    /* в фигме высота лого в шапке 105, в папке лежит высотой 114, оставила 114 */
+    line-height: 0;
+}
+
+/* Header */
+
+.header {
+    padding: 92px 50px;
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    font-size: 18px;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__list-item.active a {
+    border: none;
+}
+
+.header__list-item:not(:first-child){
+    list-style: circle;
+}
+
+.header__list-item:not(:last-child) {
+    margin-right: 32px;  
+}
+
+.contacts {
+    font-style: normal;
+    line-height: 24.3px;
+    justify-self: self-end;
+}
+
+/* Main */
+
+
+
+/* Cover */
+
+
+
+/* Lots */
+
+
+
+/* About */
+
+
+
+/* Footer */

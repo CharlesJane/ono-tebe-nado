@@ -33,7 +33,7 @@
         <img src="images/logo-black.svg" alt="Логотип" class="header__logo-img">
       </div>
 
-      <address class="contacts">
+      <address class="header__contacts contacts">
         <a href="tel:+99995555555" class="contacts__link contacts__link-mail">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge" class="contacts__link contacts__link-tel">info@sobaka.ge</a>
         <p class="contacts__address">наб. Принсенграхт 263-<br>265, Амстердам</p>
@@ -43,15 +43,17 @@
     <main>
       <section class="section cover">
         <h1 class="cover__heading">
-          <span class="cover__heading-left">оно</span>
-          <span class="cover__heading-center">тебе</span>
-          <span class="cover__heading-right">надо</span>
+          <span class="cover__heading-span">о<span class="cover__heading-spacing-big">н</span>о</span>
+
+          <span class="cover__heading-span cover__heading-center">те<span class="cover__heading-spacing-big">б</span>е</span>
+          
+          <span class="cover__heading-span cover__heading-right"><span class="cover__heading-spacing-big">н</span>ад<span class="cover__heading-spacing-zero">о</span></span>
         </h1>
 
         <div class="cover__subline">
           <p class="cover__subline-text">Аукцион вещей, вкоторые никто не верил</p>
 
-          <button class="cover__subline-bet">Сделать ставку</button>
+          <button class="cover__subline-bet button">Сделать ставку</button>
         </div>
 
         <div class="overlay"></div>
@@ -59,12 +61,14 @@
       
 
       <section class="section lots">
-        <h2 class="lots__heading">Лоты</h2>
+        <h2 class="section__heading lots__heading">Лоты</h2>
 
         <ul class="lots__list">
-          <li class="lots__list-item">
+          <li class="lots__list-item lots__andersson">
             <article class="lots__list-item-lot">
-              <a href="" class="lot__heading">Фильм режиссёра, который бросил киношколу</a>
+              <h3>
+                <a href="" class="lot__heading">Фильм режиссёра, который бросил киношколу</a>
+              </h3>
 
               <p class="lot__description">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
@@ -72,9 +76,11 @@
             <div class="overlay"></div>
           </li>
 
-          <li class="lots__list-item">
+          <li class="lots__list-item  lots__ulisses">
             <article class="lots__list-item-lot">
-              <a href="" class="lot__heading">Книга, где описан один скучный день из жизни рекламного агента</a>
+              <h3>
+                <a href="" class="lot__heading">Книга, где описан один скучный день из жизни рекламного агента</a>
+              </h3>
 
               <p class="lot__description">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
             </article>
@@ -82,9 +88,11 @@
             <div class="overlay"></div>
           </li>
 
-          <li class="lots__list-item">
+          <li class="lots__list-item lots__kandinsky">
             <article class="lots__list-item-lot">
-              <a href="" class="lot__heading">Картина, которую повторит даже 5-летний сын маминой подруги</a>
+              <h3>
+                <a href="" class="lot__heading">Картина, которую повторит даже 5-летний сын<br>маминой подруги</a>
+              </h3>
 
               <p class="lot__description">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
             </article>
@@ -97,12 +105,12 @@
       </section>
 
       <section class="section about">
-        <div class="about__logo logo">
-          <img src="images/logo-white.svg" alt="Логотип" class="about__logo-img">
+        <div class="about__logo">
+          <img src="images/logo-white.svg" alt="Логотип" class="logo-img">
         </div>
 
         <div class="about__description">
-          <h2 class="about__heading">Об аукционе</h2>
+          <h2 class="section__heading about__heading">Об аукционе</h2>
 
           <p class="about__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
 
@@ -113,7 +121,7 @@
     </main>
 
     <footer class="footer">
-      <address class="contacts">
+      <address class="footer__contacts contacts">
         <a href="tel:+99995555555" class="contacts__link contacts__link-mail">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge" class="contacts__link contacts__link-tel">info@sobaka.ge</a>
         <p class="contacts__address">наб. Принсенграхт 263-<br>265, Амстердам</p>
@@ -121,8 +129,8 @@
 
       <nav class="footer__menu">
         <ul class="footer__list">
-          <li class="footer__list-item active">
-            <a href="" class="footer__list-item-link">главная</a>
+          <li class="footer__list-item ">
+            <a href="" class="footer__list-item-link active">главная</a>
           </li>
 
           <li class="footer__list-item">
@@ -135,7 +143,6 @@
         </ul>
       </nav>
 
-      <div class="footer__socials">
         <ul class="footer__socials-list">
           <li class="footer__socials-list-item">
             <a href="" class="footer__socials-link">
@@ -155,7 +162,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </footer>
   </body>
 </html>

@@ -34,21 +34,17 @@
           src="./images/logo-black.svg"
           alt="Логотип"
           class="header__logo-img"
-        />
+        >
       </a>
 
-      <address class="header__contacts contacts">
-        <a href="tel:+99995555555" class="contacts__link contacts__link-mail"
+      <address class="header__address address">
+        <a href="tel:+99995555555" class="address__link" target="_blank"
           >+9 999 555 5555</a
         ><br>
-        <a
-          href="mailto:info@sobaka.ge"
-          class="contacts__link contacts__link-tel"
+        <a href="mailto:info@sobaka.ge" class="address__link" target="_blank"
           >info@sobaka.ge</a
         >
-        <p class="contacts__address">
-          наб. Принсенграхт 263-<br>265, Амстердам
-        </p>
+        <p class="address__text">наб. Принсенграхт 263-<br>265, Амстердам</p>
       </address>
     </header>
 
@@ -76,7 +72,7 @@
             Аукцион вещей, в которые никто не верил
           </p>
 
-          <button class="button">Сделать ставку</button>
+          <button type="button" class="button">Сделать ставку</button>
         </div>
 
         <div class="overlay"></div>
@@ -87,60 +83,59 @@
 
         <ul class="lots__list">
           <li class="lots__list-item lots__film">
-            <article class="lots__list-item-lot">
-              <h3>
-                <a href="#" class="lot__heading"
-                  >Фильм режиссёра, который бросил киношколу</a
-                >
-              </h3>
+            <a href="#" class="lots__list-link">
+              <article class="lots__card">
+                <h3 class="card__heading">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
 
-              <p class="lot__description">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </article>
+                <p class="card__description">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article>
+            </a>
 
             <div class="overlay"></div>
           </li>
 
           <li class="lots__list-item lots__book">
-            <article class="lots__list-item-lot">
-              <h3>
-                <a href="" class="lot__heading"
-                  >Книга, где описан один скучный день из жизни рекламного
-                  агента</a
-                >
-              </h3>
+            <a href="#" class="lots__list-link">
+              <article class="lots__card">
+                <h3 class="card__heading">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
 
-              <p class="lot__description">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
-            </article>
+                <p class="card__description">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article>
+            </a>
 
             <div class="overlay"></div>
           </li>
 
           <li class="lots__list-item lots__picture">
-            <article class="lots__list-item-lot">
-              <h3>
-                <a href="#" class="lot__heading"
-                  >Картина, которую повторит даже 5-летний сын<br>маминой
-                  подруги</a
-                >
-              </h3>
+            <a href="#" class="lots__list-link">
+              <article class="lots__card">
+                <h3 class="card__heading">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
 
-              <p class="lot__description">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
-            </article>
+                <p class="card__description">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
 
             <div class="overlay"></div>
           </li>
@@ -164,20 +159,20 @@
           <div class="about__text">
             <p class="about__text-item">
               Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
-              один аукцион. Потому что кому нужен дневник девочки-подростка или
-              картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-              странные вещи, созданные любителями?
+              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+              на один аукцион. Потому что кому нужен дневник девочки-подростка
+              или картина, которую может нарисовать даже ребёнок? Кому нужны все
+              эти странные вещи, созданные любителями?
             </p>
 
             <p class="about__text-item">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
-              время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-              Когда-то они казались просто неудачными. Но, несмотря
+              время. В пух и прах растерзанные критиками. Непринятые и
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря
               на&nbsp;критику, кажущуюся простоту или сложность, сейчас без этих
-              лотов невозможно представить современную культуру. Когда в эти вещи
-              не верил никто, продолжали верить их создатели. И сейчас эти лоты
-              стали культовыми.
+              лотов невозможно представить современную культуру. Когда в эти
+              вещи не верил никто, продолжали верить их создатели. И сейчас эти
+              лоты стали культовыми.
             </p>
           </div>
         </div>
@@ -185,18 +180,14 @@
     </main>
 
     <footer class="footer">
-      <address class="footer__contacts contacts">
-        <a href="tel:+99995555555" class="contacts__link contacts__link-mail"
+      <address class="footer__address address">
+        <a href="tel:+99995555555" class="address__link" target="_blank"
           >+9 999 555 5555</a
         ><br>
-        <a
-          href="mailto:info@sobaka.ge"
-          class="contacts__link contacts__link-tel"
+        <a href="mailto:info@sobaka.ge" class="address__link" target="_blank"
           >info@sobaka.ge</a
         >
-        <p class="contacts__address">
-          наб. Принсенграхт 263-<br>265, Амстердам
-        </p>
+        <p class="address__text">наб. Принсенграхт 263-<br>265, Амстердам</p>
       </address>
 
       <nav class="footer__menu">
@@ -217,19 +208,19 @@
 
       <ul class="footer__socials-list">
         <li class="footer__socials-list-item">
-          <a href="#" class="footer__socials-link">
+          <a href="#" class="footer__socials-link" target="_blank">
             <img src="images/yt.svg" alt="иконка youtube">
           </a>
         </li>
 
         <li class="footer__socials-list-item">
-          <a href="#" class="footer__socials-link">
+          <a href="#" class="footer__socials-link" target="_blank">
             <img src="images/vk.svg" alt="иконка vk">
           </a>
         </li>
 
         <li class="footer__socials-list-item">
-          <a href="#" class="footer__socials-link">
+          <a href="#" class="footer__socials-link" target="_blank">
             <img src="images/pinterest.svg" alt="иконка pinterest">
           </a>
         </li>
